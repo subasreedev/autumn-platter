@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Give+You+Glory&family=Poppins:wght@100&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(235, 231, 224);
+    width: 100%;
+    height: 100vh;
+    font-family: 'Give You Glory', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+ul{
+    list-style: none;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.logo{
+    font-size: 40px;
+}
+
+.menu-links ul li{
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.search, .cart{
+    font-size: 20px;
+}
+
+.content{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    z-index: -1;
+}
+
+.title{
+    flex: 0 0 100%;
+    font-size: 150px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.tagline{
+    flex: 1;
+    font-size: 30px;
+    color: rgb(109, 55, 17);
+}
+
+.pages{
+    flex: 0;
+    letter-spacing: 5px;
+    color: rgb(0, 0, 0);
+}
+
+.pages span{
+    font-size: 60px;
+    color: black;
+    font-weight: 600;
+}
+
+.more{
+    flex: 3;
+}
+
+.more a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background: black;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.desc{
+    flex: 0 0 32%;
+}
+
+.desc p:nth-child(1){
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.desc span{
+    color: rgb(159, 111, 77);
+}
+
+.cookie{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    animation: float 4s ease-in-out infinite;
+}
+
+.cookie img{
+    max-height: 600px;
+}
+
+@keyframes float{
+    0%{
+        transform: translate(-50%, -46%);
+    }
+    50%{
+        transform: translate(-50%, -54%);
+    }
+    100%{
+        transform: translate(-50%, -46%);
+    }
+}
+
+.arrows .prev{
+    position: absolute;
+    top: 50%;
+    left: 100px;
+}
+
+.arrows .next{
+    position: absolute;
+    top: 50%;
+    right: 100px;
+}
+
+.arrows button{
+    border: 1px solid rgb(162, 160, 164);
+    background: transparent;
+    padding: 20px;
+    border-radius: 50%;
+    outline: none;
+}
+
+.arrows button:hover{
+    color: white;
+    background: black;
+}
